@@ -18,6 +18,12 @@ class Carro extends \AulaPW\Conexao{
         $this->Conectar();
         $this->sql = "SELECT * FROM tb_carro";
         parent::Listar();
+    }
+
+    public function ListarJSON(){
+        $this->Listar();
         echo json_encode($this->dados);
     }
+
+
 }
