@@ -1,4 +1,4 @@
-CREATE TABLE `pw3`.`tb_carro` (
+CREATE TABLE `tb_carro` (
     `codigo` INT NOT NULL AUTO_INCREMENT,
     `marca` VARCHAR(50) NOT NULL,
     `modelo` VARCHAR(50) NOT NULL,
