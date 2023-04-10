@@ -1,8 +1,8 @@
 <?php
-require("../conexao.php");
-
-$consulta = $conexao->query("SELECT * FROM tb_carro");
-$dados = $consulta->fetchAll(PDO::FETCH_NAMED);
+require_once("carregar.php");
+use AulaPW\Modelo\Carro;
 
 header("Content-type: application/json");
-echo json_encode($dados);
+
+$carro = new Carro();
+$carro->Listar();
